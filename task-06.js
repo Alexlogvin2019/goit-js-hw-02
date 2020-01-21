@@ -13,7 +13,9 @@ while (input !== null) {
     let numbersLength = numbers.push(Number(input));
   }
 }
-for (let i = 0; i < numbers.length; i += 1) {
-  total = total + numbers[i];
+if (numbers.length !== 0) {
+  for (let i = 0; i < numbers.length; i += 1) {
+    total = total + numbers[i];
+  }
 }
 console.log(`Общая сумма чисел равна ${total}`);
